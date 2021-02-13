@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.pocetni-tekst {
+    background-color: #284b63;
+    background-image:url(pozadina.jpg);
+    background-position: center;
+    padding: 50px 100px;
+}
+
+.pocetni-tekst h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.pocetni-tekst h1 i{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.pocetni-tekst p {
+    font-style: italic;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px;
+    background-color: #dfdfdf;
+}
+
+.leva-strana {
+    width: 40%;
+}
+
+.leva-strana p {
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-color: rgb(146, 146, 146);
+    margin-right: 10px;
+}
+
+.poslednji-input {
+    margin-bottom: 40px;
+}
+
+#button {
+    color: #ffffff;
+    background-color: #3c6e71;
+    width: 120px;
+    padding: 11px 0;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#tekst {
+    width:100px;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    margin-right: 5px;
+    color: rgb(146, 146, 146);
+}
+
+#button:hover {
+    background-color:#639396;
+    transition: .3s ease-in-out;
+}
+
+.dugme-rezultat {
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+}
+
+#mapid { 
+    height: 350px;
+    width: 500px;
+}
+
+.leva-strana > div {
+    display:flex;
+    align-items: baseline;
+}
+
+.leva-strana > div > a{
+    width: 33px;
+    height: 33px;
+    background-color: #3c6e71;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.leva-strana > div > a:hover{
+    background-color: #639396;
+    transition: .3s ease-in-out;
+}
+
+.leva-strana > div > a > i {
+    color: white;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(27, 27, 27);
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #dfdfdf;
+}
+
+@media all and (max-width:1100px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leva-strana {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #mapid {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:750px) {
+    .pocetni-tekst {
+        padding: 30px 50px;
+    }
+
+    .container {
+        padding: 50px;
+    }
+}

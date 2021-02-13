@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <title>Pametni gradovi</title>
+</head>
+<body>
+    
+    <div class="pocetni-tekst">
+        <h1><i class="fas fa-map-marked-alt"></i>Pametni gradovi</h1>
+        <p><b>Izračunajte udaljenost između tačke A i tačke B</b></p>
+    </div>
+
+    <div class="container">
+        <div class="leva-strana">
+            <p>Unesite prvu lokaciju:</p>
+            <div>
+                <input id="polje1" type="text" placeholder="Šišanom latinicom u formatu: grad, država">
+                <a id="potvrdi1"><i class="fas fa-check"></i></a>
+                <a id="izbrisi1"><i class="fas fa-times"></i></a>
+            </div>
+            <p>Unesite drugu lokaciju:</p>
+            <div>
+                <input id="polje2" type="text" placeholder="Šišanom latinicom u formatu: grad, država">
+                <a id="potvrdi2"><i class="fas fa-check"></i></a>
+                <a id="izbrisi2"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="dugme-rezultat">
+                <button id="button" href="">IZRAČUNAJ</button>
+                <p id="tekst">Rezultat</p>
+                <p>km</p>
+            </div>
+        </div>
+        <div id="mapid"></div>
+    </div>
+
+    <footer>
+        <p><i>Pametni gradovi</i> je projekat studenata izrađen za potrebe predmeta Elektronsko poslovanje.<br><br>Autori: Rade Mrđa, Isidora Miljković, Matija Nikolić</p>
+    </footer>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
